@@ -15,22 +15,23 @@ header {
 	background: lightblue;
 }
 .havo {
-	
+	margin: 0;
 	width: 10%;
-	background: #fff;
-
+	background: lightblue;
+	display: flex;
+	justify-content: space-between;
 	
 }
 #city {
-	float: right;
+	
     width: 49%;
     
     font-size: 23px;
 }
 
 .havo img {
-	float: left;
-	width: 70px;
+	
+	width: 80px;
 }
 .navblock {
 	padding: 10px 0;
@@ -90,7 +91,7 @@ header {
 	margin-top: 60px;
 }
 .news {	
-	width: 90%;
+	width: 99%;
 	margin: 20px auto;
 	display: flex;
 	justify-content: space-between;

@@ -28,6 +28,7 @@
 		<img src="rasm/<?=$row['img']?>" style="height:400px">
 	</div>
 </div>
+<h1 style="text-align: center;margin-top: 50px">So`nggi yangiliklar</h1>
 <div class="cards">
 	<?php foreach ($anons as $value) { ?>
 	<div class="card">

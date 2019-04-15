@@ -23,7 +23,9 @@
     		include_once('blocks/slide.php');
    		?>
  	<!-- ====Malumotlar finish==== -->
-
+ 		<?php 
+ 			include_once('keyss.php');
+ 		 ?>
 
 
  	</div>

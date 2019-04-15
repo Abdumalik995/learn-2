@@ -2,10 +2,11 @@
    header("Content-Type: text/html; charset=utf-8");
    include('db.php');
    if (isset($_GET['id'])) {
-	  $id = $_GET['id'];
-	  $surov = "SELECT * FROM content WHERE id=".$id."";
-	  $result = mysqli_query($db, $surov);
+	   $id = $_GET['id'];
+	   $surov = "SELECT * FROM content WHERE id=".$id."";
+	   $result = mysqli_query($db, $surov);
       $rows = mysqli_fetch_array($result);
+      
    	$surov2 = "SELECT name FROM kategoriya WHERE id=".$rows['cat_id']."";
 
    	  $result2 =  mysqli_query($db, $surov2);

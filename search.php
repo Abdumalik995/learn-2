@@ -42,7 +42,7 @@
 
       
     <!-- ====Malumotlar==== -->
-        <h1 class="theme"><?php //echo $row2['name']?> yangiliklari</h1> 
+        
              
       
         <?php foreach ($massiv as $value) { ?>

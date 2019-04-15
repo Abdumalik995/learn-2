@@ -19,7 +19,7 @@
  	</ul>
  </header>
  	<div class="search">
- 		<form action="search.php" method="GET">
+ 		<form action="search.php" method="GET" autocomplete="off">
  			<input type="text" name="search" placeholder="Izlash...">
  			<input type="submit" name="Izlash" value="Izlash">
  		</form>

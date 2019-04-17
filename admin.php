@@ -24,7 +24,7 @@
 			<input type="text" name="anonss" placeholder="anons here">
             <span class="red"> <?php ?></span>
             <br>
-            <textarea name="text"></textarea>
+            <textarea type="text" name="texts"></textarea>
             <br>
             <input type="file" name="fayl" accept=".jpg, .jpeg, .png">
             <br>	
@@ -48,7 +48,7 @@
     </div>
     <script src="ckeditor/ckeditor.js"></script>
     <script>
-		CKEDITOR.replace('text');
+		CKEDITOR.replace('texts');
 	</script>
 </body>
 </html> 

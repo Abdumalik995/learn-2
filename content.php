@@ -32,8 +32,16 @@
  	<title>MNews</title>
  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
  	<meta name="description" content="">
-    <meta name="author" content="">
+  <meta name="author" content="">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
  	<link href="css/style.css" rel="stylesheet">
+  <style type="text/css">
+    .keys {
+      color: #555;
+      text-align: right;
+      font-size: 10px;
+    }
+  </style>
  </head>
  <body>
  	<!-- Header start -->
@@ -54,6 +62,8 @@
           	 		<p>
           	 		<?=$value['anons']?>
           	 		</p>
+                <p class="keys"><span style="margin-right: 5px"><?=$value['datee'];?></span>
+                <i class="far fa-eye" style="margin-right:5px;color:#aaa"></i><?=$value['keyss'];?></p>
           	 		<a href="contentmore.php?id=<?=$value['id']?>">Batafsil</a>
             	</div>
       		</div>

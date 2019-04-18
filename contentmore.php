@@ -5,7 +5,8 @@
 	   $id = $_GET['id'];
 	   $surov = "SELECT * FROM content WHERE id=".$id."";
 	   $result = mysqli_query($db, $surov);
-      $rows = mysqli_fetch_array($result);
+     
+    $rows = mysqli_fetch_array($result);
       
    	$surov2 = "SELECT name FROM kategoriya WHERE id=".$rows['cat_id']."";
 
@@ -31,7 +32,14 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
    <link href="css/style.css" rel="stylesheet">
+   <style type="text/css">
+    .keys {
+    text-align: right;
+    font-size: 10px;
+    }
+  </style>
  </head>
  <body>
    <!-- Header start -->
@@ -59,10 +67,11 @@
       </h2>
       <div class="news">   
          <img class="pull-left" alt="" src="rasm/<?php echo $rows['img'];?>" style="margin-right:15px"/>
-         <p><?php echo $rows['texts']; ?><br><br><span><?=$key;?></span></p>
+         <p><?php echo $rows['texts']; ?></p>
       
-      </div>
-      
+      </div>      
+      <p class="keys"><span style="margin-right: 5px"><?=$rows['datee'];?></span>
+      <i class="far fa-eye" style="margin-right:5px;color:#aaa"></i><?=$key;?></p>
    
       
 

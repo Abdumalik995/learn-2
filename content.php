@@ -5,9 +5,11 @@
 		include "db.php";
 
 		
-  		$query = "SELECT * FROM content WHERE cat_id=$id order by id desc";
-  		$query2 = "SELECT * FROM kategoriya WHERE id=$id";
+  	$query = "SELECT * FROM content WHERE cat_id=$id order by id desc";
+  	$query2 = "SELECT * FROM kategoriya WHERE id=$id";
+
 		$result = mysqli_query($db, $query);
+    
 		$result2 = mysqli_query($db, $query2);
 		$row2 = mysqli_fetch_assoc($result2);
 

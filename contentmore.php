@@ -4,20 +4,16 @@
    if (isset($_GET['id'])) {
 	   $id = $_GET['id'];
 	   $surov = "SELECT * FROM content WHERE id=".$id."";
-	   $result = mysqli_query($db, $surov);
-     
-    $rows = mysqli_fetch_array($result);
+	   $result = mysqli_query($db, $surov);     
+     $rows = mysqli_fetch_array($result);
       
-   	$surov2 = "SELECT name FROM kategoriya WHERE id=".$rows['cat_id']."";
-
-   	  $result2 =  mysqli_query($db, $surov2);
-   	
+   	  $surov2 = "SELECT name FROM kategoriya WHERE id=".$rows['cat_id']."";
+   	  $result2 =  mysqli_query($db, $surov2);   	
    	  $rows2 = mysqli_fetch_array($result2);
    	  //echo($rows2);
 
    	  //echo "eski".$rows['keyss'],'<br>';
-   	  $key = $rows['keyss']+1;
-   	  //echo $key;
+   	  $key = $rows['keyss']+1;   	  
    	  $query = "UPDATE content SET keyss = '$key' WHERE id = ".$id."";
 
    	  $result3 = mysqli_query($db, $query);

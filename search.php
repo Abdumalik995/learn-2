@@ -5,7 +5,7 @@
         $search = $_GET['search'];
         include('db.php');
         if (!empty($_GET['search'])) {
-            $surov = "SELECT * FROM content WHERE anonss LIKE '%".$search."%' ORDER BY id DESC";
+            $surov = "SELECT * FROM content WHERE texts LIKE '%".$search."%' ORDER BY id DESC";
             $results = mysqli_query($db, $surov);
             $massiv = array();
             while ($rows = @mysqli_fetch_assoc($results)) {

@@ -53,7 +53,7 @@
       $data = htmlspecialchars($data);
       return $data;
     }
-	if(empty($name) and empty($surname)) {
+	if(empty($name) and empty($anonss)) {
         $query = '';
        } else {
          $query = "INSERT INTO content (`name`, `anonss` , `texts` , `img` , `datee` , `avtor`, `cat_id`) VALUES ('$name', '$anonss', '$text', '$papka', '$datee', '$avtor', '$cat_id')";
